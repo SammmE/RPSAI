@@ -17,7 +17,7 @@ def read_data() -> List[List[List[str]]]:
         if line == "-\n":
             data.append(game)
             game = []
-        elif len(line) == 2:
+        else:
             game.append((data_key[line[0]], data_key[line[1]]))
 
     return data
